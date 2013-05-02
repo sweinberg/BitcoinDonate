@@ -1,13 +1,10 @@
-function getBitcoinAddr() {
-   var metas = document.getElementsByTagName('meta');
-
-   for (i=0; i<metas.length; i++) {
-      if (metas[i].getAttribute("property") == "bitcoin") {
-         return metas[i].content;
-      }
+function getBitcoinAddr(){
+  var m = document.getElementsByTagName('meta');
+  for(var i in m){
+   if(m[i][i].name == "bitcoin"){
+     return m[i].content;
    }
-
-    return "";
+  }
 }
 function myFunction()
 {
