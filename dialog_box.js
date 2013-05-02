@@ -1,19 +1,10 @@
-function getBitcoinAddr() {
-   var metas = document.getElementsByTagName('meta');
-
-   for (i=0; i<metas.length; i++) {
-      if (metas[i].getAttribute("property") == "bitcoin") {
-         return metas[i].getAttribute("content");
-      }
-   }
-
-    return "";
-}
 function myFunction()
 {
+
+var addr = $('meta[name=bitcoin]').attr("content");
 var x;
-var r=confirm;javascript:window.prompt ('Please send a donation to our Bitcoin address:', getBitcoinAddr());
-if (r==true)
+var r=confirm;javascript:window.prompt ('Please send a donation to our Bitcoin address:', addr);
+if (r)
   {
   x="Thank you!";
   }
