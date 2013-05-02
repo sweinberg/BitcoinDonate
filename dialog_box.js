@@ -3,7 +3,7 @@ function getBitcoinAddr() {
 
    for (i=0; i<metas.length; i++) {
       if (metas[i].getAttribute("property") == "bitcoin") {
-         return metas[i].getAttribute("content");
+         return metas[i].content;
       }
    }
 
