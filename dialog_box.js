@@ -1,16 +1,14 @@
 function myFunction()
 {
-
-var addr = $('meta[name=bitcoin]').attr("content");
 var x;
-var r=confirm;javascript:window.prompt ('Please send a donation to our Bitcoin address:', addr);
-if (r)
+var r=confirm;javascript:window.prompt ('Please send a donation to our Bitcoin address:', '1BayBFcQP4D6iz3FSaEwqNDDcbbgnQFUtN');
+if (r==true)
   {
-  x="Thank you!&#9829;";
+  x="Thank you! &#9829;";
   }
 else
   {
-  x="Thank you!&#9829;";
+  x="Thank you! &#9829;";
   }
 document.getElementById("demo").innerHTML=x;
 }
