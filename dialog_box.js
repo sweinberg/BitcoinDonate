@@ -10,5 +10,5 @@ else
   {
   x="Thank you! &#9829;";
   }
-document.getElementById("demo").innerHTML=x;
+document.getElementById("msg").innerHTML=x;
 }
